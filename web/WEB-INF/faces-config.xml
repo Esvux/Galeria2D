@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+    <navigation-rule>
+        <display-name>detalle</display-name>
+        <from-view-id>/index.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>detalle</from-outcome>
+            <to-view-id>/detalle.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+
+    <navigation-rule>
+        <display-name>regresar</display-name>
+        <from-view-id>/detalle.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>a_galeria</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+
+</faces-config>
